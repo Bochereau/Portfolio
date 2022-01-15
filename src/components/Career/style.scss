@@ -1,0 +1,222 @@
+@use '../../styles/vars';
+@use 'sass:color';
+
+.career{
+  background-color: vars.$background-color;
+  box-shadow: 0 0 5px black;
+  padding: vars.$gutter;
+  @media (max-width: 425px) {
+    padding: vars.$gutter*0.5;
+  }
+  &-title{
+    font-size: vars.$gutter*2.5;
+    margin: 0 vars.$gutter*2;
+    font-family: 'Russo One', sans-serif;
+    padding: vars.$gutter 0 ;
+    display: flex;
+    align-items: center;
+    @media (max-width: 425px) {
+      font-size: vars.$gutter*1.5;
+    }
+  }
+  &-description{
+    font-size: vars.$gutter*1.5;
+    margin: 0 vars.$gutter*2;
+    padding-bottom: vars.$gutter*2;
+    @media (max-width: 425px) {
+      font-size: vars.$gutter*1.3;
+    }
+  }
+  &-list{
+    margin: vars.$gutter*3;
+    &-item{
+      font-size: vars.$gutter*1.4;
+      list-style-type: "\27AA";
+      padding: vars.$gutter*0.5 vars.$gutter;
+      @media (max-width: 425px) {
+        font-size: vars.$gutter*1.3;
+      }
+    }
+  }
+  &-content{
+    @media (max-width: 1300px) {
+      padding: 0 vars.$gutter*2;
+    }
+    @media (max-width: 425px) {
+      padding: 0 vars.$gutter;
+    }
+    &-box{
+      padding: vars.$gutter*2;
+      @media (max-width: 425px) {
+        padding: vars.$gutter 0;
+      }
+    }
+    &-open{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      @media (max-width: 425px) {
+        flex-direction: column;
+        padding-bottom: vars.$gutter*1.5;
+      }
+      &-button{
+        border: 2px solid black;
+        padding: 0 vars.$gutter;
+        background-color: vars.$background-color;
+        @media (max-width: 425px) {
+          width: 100%;
+          margin-top: vars.$gutter;
+        }
+        & img {
+          width: 45px;
+          @media (max-width: 425px) {
+            width: 30px;
+          }
+        }
+      }
+    }
+    &-title{
+      font-size: vars.$gutter*1.8;
+      font-family: 'Russo One', sans-serif;
+      letter-spacing: vars.$gutter*0.2;
+      text-align: center;
+      @media (max-width: 425px) {
+        font-size: vars.$gutter*1.4;
+      }
+    }
+  }
+}
+
+.article{
+  display: flex;
+  align-items: flex-start;
+  border-left: 3px solid vars.$primary-color;
+  font-size: vars.$gutter*1.3;
+  padding: vars.$gutter;
+  margin: 0 vars.$gutter*2;
+  @media (max-width: 768px) {
+    padding-top: vars.$gutter*2;
+    margin: 0;
+  }
+  @media (max-width: 425px) {
+    font-size: vars.$gutter*1.2;
+  }
+  &-outer-dot{
+    min-width: 30px;
+    min-height: 30px;
+    background-color: vars.$primary-color;
+    border-radius: 50%;
+    position: relative;
+    left: -32px;
+  }
+  &-inner-dot{
+    position: absolute;
+    background: vars.$background-color;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    top: 50%;
+    left: 50%;
+    margin: -10px 0px 0px -10px;
+  }
+  &-content{
+    &-text{
+      padding: vars.$gutter*0.3 0;
+      line-height: 1.2;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    &-image{
+      width: 100px;
+      margin-left: vars.$gutter;
+      @media (max-width: 425px) {
+        margin: vars.$gutter*0.5 0;
+      }
+    }
+    &-title{
+      font-weight: bold;
+      margin-bottom: vars.$gutter;
+    }
+    &-subtitle{
+      font-weight: bold;
+      margin-right: vars.$gutter*1.5;
+    }
+    &-subdivision{
+      display: flex;
+      align-items: flex-start;
+      margin-top: vars.$gutter;
+    }
+    &-time{
+      padding: vars.$gutter*0.5 vars.$gutter;
+      border-radius: 5px;
+      margin-right: vars.$gutter*2;
+      background-color: vars.$primary-color;
+      box-shadow: 0 0 3px vars.$primary-color;
+      color: vars.$background-color;
+      text-align: center;
+    }
+
+    // link to school and society
+    &-link{
+      padding: vars.$gutter 0;
+    }
+
+    &-place{
+      padding: vars.$gutter*0.5;
+      font-size: vars.$gutter*1.3;
+      margin: vars.$gutter*0.5 0;
+      background-color: vars.$background-color;
+      color: vars.$primary-color;
+      border-radius: 5px;
+      border: 3px solid vars.$primary-color;
+    }
+
+    &-missions{
+      margin-top: vars.$gutter;
+      & div{
+        line-height: 1.2;
+      }
+      & ul{
+        line-height: 1.5;
+      }
+      & li{
+        list-style-type: "\27AA";
+        margin-left: vars.$gutter*2;
+        padding-left: vars.$gutter;
+      }
+    }
+
+    @media (max-width: 1300px) {
+      &-description{
+        margin-top: vars.$gutter*1.5;
+        flex-direction: column;
+        align-items: flex-start;
+        &-society{
+          margin: vars.$gutter 0;
+        }
+      }
+      &-subdivision, &-label{
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+.redirect{
+  color: vars.$link-color;
+  text-decoration: underline;
+  text-underline-position: under;
+  margin-left: vars.$gutter*0.5;
+  display: flex;
+  align-items: center;
+  &:hover{
+    opacity: 0.8;
+  }
+  & span{
+    margin-left: vars.$gutter*0.2;
+  }
+  @media (max-width: 425px) {
+    margin: 0;
+  }
+}

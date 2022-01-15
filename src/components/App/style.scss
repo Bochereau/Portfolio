@@ -1,0 +1,60 @@
+@use '../../styles/vars';
+@use 'sass:color';
+
+.wrapper{
+  display: flex;
+  justify-content: center;
+  color: vars.$primary-color;
+}
+
+.app{
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 vars.$gutter*2;
+  @media(max-width:425px){
+    margin: 0 vars.$gutter*0.5;
+  }
+}
+
+.separation{
+  padding-top: vars.$gutter*10;
+  display: block;
+  float: none;
+}
+
+.menu-icon{
+  width: 30px;
+}
+
+.navbar-icon{
+  width: 30px;
+  margin-right: vars.$gutter;
+}
+
+.title-img{
+  margin-right: vars.$gutter*1.5;
+}
+
+.border{
+  border-right: 1px solid #999;
+}
+
+.em{
+  font-weight: bold;
+}
+
+.link{
+  font-size: vars.$gutter*1.2;
+  font-weight: bold;
+  border: 3px solid vars.$link-alt;
+  border-radius: 15px;
+  padding: vars.$gutter*0.8;
+  color: vars.$background-color;
+  background-color: vars.$link-alt;
+  transition: transform 150ms ease-in-out;
+  &:hover{
+    color: vars.$link-alt;
+    background-color: vars.$background-color;
+    transform: translateY(-3px);
+  }
+}

@@ -1,0 +1,126 @@
+@use '../../styles/vars';
+@use 'sass:color';
+
+.header{
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: vars.$background-color;
+  border-bottom: 5px solid vars.$primary-color;
+  
+  &-title{
+    padding: 0 vars.$gutter*2.5;
+    font-size: vars.$gutter*2;
+    font-weight: bold;
+    font-family: 'Russo One', sans-serif;
+    letter-spacing: 1px;
+    background: -webkit-linear-gradient(45deg, vars.$link-color, vars.$link-alt);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    
+    @media (max-width: 1300px) {
+      font-size: vars.$gutter*1.8;
+      padding: 0 vars.$gutter*1.5;
+    }
+  }
+  &-menu{
+    display: none;
+  }
+
+  @media (max-width: 952px) {
+    padding: vars.$gutter;
+    height: vars.$gutter*7;
+    &-menu{
+      display: flex;
+      padding: 0 vars.$gutter;
+    }
+  }
+
+  @media (max-width: 768px) {
+    &-title{
+      padding: 0 vars.$gutter;
+      font-size: vars.$gutter*1.7;
+    }
+    &-subtitle{
+      padding: 0 vars.$gutter;
+      font-size: vars.$gutter;
+    }
+  }
+
+  @media (max-width: 768px) {
+    height: vars.$gutter*5;
+    &-title{
+      padding: 0 vars.$gutter*0.5;
+      font-size: vars.$gutter*1.5;
+      & span{
+        display: block;
+        margin-top: vars.$gutter;
+        border: none;
+      }
+    }
+    &-subtitle{
+      display: none;
+    }
+  }
+}
+
+.nav{
+  padding: vars.$gutter*2 0;
+  &-link{
+    padding: vars.$gutter*2 vars.$gutter;
+    font-size: vars.$gutter*1.3;
+    box-sizing: border-box;
+    height: 100%;
+    @media (max-width: 1300px) {
+      font-size: vars.$gutter*1.2;
+      padding: vars.$gutter*2.5 vars.$gutter*0.5;
+    }
+    &-selected, &:hover{
+      background-color: vars.$primary-color;
+      color: vars.$background-color;
+    }
+  }
+  
+  @media (max-width: 952px) {
+    display: none;
+  }
+}
+
+
+.resNav{
+  color: vars.$primary-color;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: vars.$background-color;
+  border: 3px solid vars.$primary-color;
+  &-link{
+    border-top: 1px solid color.scale(vars.$primary-color, $lightness:-50%);
+    padding: vars.$gutter vars.$gutter*1.5;
+    display: flex;
+    align-items: center;
+    overflow: auto;
+  }
+  &-close{
+    text-align: right;
+    padding-top: 20px;
+    padding-right: vars.$gutter*1.5;
+    height: 75px;
+  }
+  @media (min-width: 769px) {
+    display: none;
+  }
+  @media (max-width: 426px) {
+    width: 80%;
+    
+  }
+}

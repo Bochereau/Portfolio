@@ -1,0 +1,57 @@
+@use '../../styles/vars';
+@use 'sass:color';
+
+.footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  background-color: vars.$background-color;
+  //border-top: 5px solid vars.$primary-color;
+  box-shadow: 0 0 5px black;
+  margin-top: vars.$gutter*4;
+  padding: vars.$gutter;
+  @media (max-width: 425px) {
+    padding: vars.$gutter*0.5;
+  }
+  &-text{
+    display: flex;
+    align-items: center;
+    font-size: vars.$gutter*1.3;
+    margin-left: vars.$gutter;
+    @media (max-width: 425px) {
+      flex-direction: column;
+      align-items: flex-start;
+      line-height: vars.$gutter*1.6;
+    }
+  }
+  &-copyright{
+    display: flex;
+    align-items: baseline;
+    &-img{
+      width: 15px;
+      margin-right: vars.$gutter*0.5;
+    }
+  }
+  &-arrow{
+    background-color: white;
+    margin-right: vars.$gutter;
+    border-radius: 10%;
+    border: 4px solid vars.$primary-color;
+    &-img{
+      width: 40px;
+      margin: vars.$gutter*0.3;
+      @media (max-width: 426px) {
+        width: 30px;
+      }
+    }
+  }
+  &-separation {
+    padding: 0 vars.$gutter;
+    @media (max-width: 425px) {
+      display : none;
+    }
+  }
+}
