@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { HashLink } from 'react-router-hash-link';
 
 // css import 
 import './style.scss';
