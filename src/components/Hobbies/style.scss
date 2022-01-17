@@ -13,6 +13,9 @@
     align-items: center;
     padding: vars.$gutter*2 0;
     color: white;
+    @media (max-width: 426px) {
+      padding: vars.$gutter 0;
+    }
   }
   &-item{
     margin: vars.$gutter;
@@ -22,11 +25,15 @@
     &:hover{
       box-shadow: inset 0 0 150px black;
     }
+    @media (max-width: 426px) {
+      margin: vars.$gutter*0.5;
+      box-shadow: inset 0 0 150px black;
+    }
   }
   &-img{
     margin-bottom: vars.$gutter;
     @media (max-width: 426px) {
-        margin-bottom: vars.$gutter*0.5;
+      margin-bottom: vars.$gutter*0.5;
     }
 }
   &-article{
@@ -44,6 +51,12 @@
     @media (max-width: 426px) {
       width: 130px;
       height: 130px;
+      opacity: 1;
+      text-shadow: 0 0 10px black;
+    }
+    @media (max-width: 376px) {
+      width: 110px;
+      height: 110px;
     }
     
     &:hover{
@@ -63,7 +76,7 @@
         border-top: none;
         padding-top: 0;
       }
-      @media (max-width: 425px) {
+      @media (max-width: 426px) {
         font-size: vars.$gutter;
         border-top: none;
         padding-top: 0;

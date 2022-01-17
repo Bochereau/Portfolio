@@ -11,8 +11,8 @@
     font-size: vars.$gutter*1.2;
     margin: vars.$gutter*3 0;
     line-height: 1.3;
-    @media (max-width: 425px) {
-      font-size: vars.$gutter*1.3;
+    @media (max-width: 426px) {
+      font-size: vars.$gutter*1.1;
     }
   }
 
@@ -25,12 +25,12 @@
       &:hover{
         color: vars.$link-alt;
       }
-      @media (max-width: 425px) {
+      @media (max-width: 426px) {
         font-size: vars.$gutter*1.1;
       }
       & span{
         margin-left: vars.$gutter;
-        @media (max-width: 1024px) {
+        @media (max-width: 1025px) {
           line-height: vars.$gutter*1.5;
         }
       }
@@ -46,7 +46,7 @@
       justify-content: space-between;
       margin-top: vars.$gutter;
       font-size: vars.$gutter*1.3;
-      @media (max-width: 768px) {
+      @media (max-width: 769px) {
         flex-direction: column;
         align-items: flex-start;
         font-size: vars.$gutter*1.1;
@@ -60,13 +60,13 @@
         font-weight: bold;
         text-align: center;
         overflow: hidden;
-        @media (max-width: 768px) {
+        @media (max-width: 769px) {
           width: 100%;
         }
-        @media (max-width: 425px) {
+        @media (max-width: 426px) {
           margin-left: 0;
         }
-        @media (max-width: 320px) {
+        @media (max-width: 321px) {
           font-size: vars.$gutter*0.8;
         }
         &-primary, &-secondary{
@@ -81,7 +81,7 @@
   
         &-primary{
           background-color: vars.$background-color;
-          @media (max-width: 768px) {
+          @media (max-width: 769px) {
             justify-content: center;
           }
         }
@@ -100,7 +100,7 @@
   }
 }
 
-@media(max-width: 768px) {
+@media(max-width: 769px) {
   .tp{
     margin: vars.$gutter 0;
   }

@@ -7,7 +7,7 @@
   // border-bottom: 5px solid vars.$primary-color;
   box-shadow: 0 0 5px black;
   padding: vars.$gutter;
-  @media (max-width: 425px) {
+  @media (max-width: 426px) {
     padding: vars.$gutter*0.2;
   }
 
@@ -16,7 +16,7 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     width: 100%;
-    @media (max-width: 768px) {
+    @media (max-width: 769px) {
       margin: 0;
     }
   }
@@ -25,7 +25,7 @@
     width: 100%;
     text-align: center;
     padding: vars.$gutter*2 0 vars.$gutter;
-    @media (max-width: 768px) {
+    @media (max-width: 769px) {
       padding: vars.$gutter*2 0;
     }
   }
@@ -34,7 +34,15 @@
     width: 400px;
     margin: vars.$gutter*2 auto;
     box-shadow: 1px 2px 2px 3px rgba(143, 142, 142, 0.4);
-    
+    @media (max-width: 769px) {
+      width: 60%;
+    }
+    @media (max-width: 426px) {
+      width: 95%;
+    }
+    @media (max-width: 321px) {
+      width: 100%;
+    }
     
     &-title{
       font-family: 'Russo One', sans-serif;
@@ -42,7 +50,7 @@
       text-transform: uppercase;
       text-align: center;
       padding: vars.$gutter*0.8;
-      @media (max-width: 425px) {
+      @media (max-width: 426px) {
         font-size: vars.$gutter*1.1;
       }
     }
@@ -90,7 +98,7 @@
           background-color: vars.$primary-color;
           fill: vars.$background-color;
         }
-        @media (max-width: 425px) {
+        @media (max-width: 426px) {
           font-size: vars.$gutter;
         }
         & span{

@@ -169,7 +169,7 @@ Language part
   justify-content: space-around;
   align-items: center;
   padding: vars.$gutter;
-  @media (max-width: 768px) {
+  @media (max-width: 769px) {
     flex-direction: column;
   }
   &-description{
@@ -187,7 +187,7 @@ Language part
     align-items: center;
     justify-content: center;
     width: 40%;
-    @media (max-width: 768px) {
+    @media (max-width: 769px) {
       margin-top: vars.$gutter;
       width: 100%;
     }
