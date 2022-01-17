@@ -15,13 +15,13 @@ const Web = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <>
-      <div className="career-content-open">
-        <h2 className="career-content-title">
+    <div className='career-box'>
+      <div className="career-box-open">
+        <h2 className="career-box-title">
           Le Web
         </h2>
         <button 
-          className="career-content-open-button"
+          className="career-box-open-button"
           onClick={() => setOpen(!open)}
         >
           {open === false ? <img src={expandArrow} alt="fleche vers le bas"/> : <img src={collapseArrow} alt="fleche vers le haut"/>}
@@ -152,7 +152,7 @@ const Web = () => {
           </article>
         </>
       }   
-    </>
+    </div>
   )
 }
 

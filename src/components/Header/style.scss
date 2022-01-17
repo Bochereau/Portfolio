@@ -32,9 +32,9 @@
     display: none;
   }
 
-  @media (max-width: 952px) {
+  @media (max-width: 1000px) {
     padding: vars.$gutter;
-    height: vars.$gutter*7;
+    height: vars.$gutter*5;
     &-menu{
       display: flex;
       padding: 0 vars.$gutter;
@@ -53,7 +53,7 @@
   }
 
   @media (max-width: 768px) {
-    height: vars.$gutter*5;
+    
     &-title{
       padding: 0 vars.$gutter*0.5;
       font-size: vars.$gutter*1.5;
@@ -78,7 +78,6 @@
     height: 100%;
     @media (max-width: 1300px) {
       font-size: vars.$gutter*1.2;
-      padding: vars.$gutter*2.5 vars.$gutter*0.5;
     }
     &-selected, &:hover{
       background-color: vars.$primary-color;
@@ -86,7 +85,7 @@
     }
   }
   
-  @media (max-width: 952px) {
+  @media (max-width: 1000px) {
     display: none;
   }
 }
@@ -116,7 +115,7 @@
     padding-right: vars.$gutter*1.5;
     height: 75px;
   }
-  @media (min-width: 769px) {
+  @media (min-width: 1000px) {
     display: none;
   }
   @media (max-width: 426px) {

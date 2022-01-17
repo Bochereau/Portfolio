@@ -43,16 +43,6 @@ const Navbar = () => (
       Parcours
     </NavHashLink>
 
-    {/* <NavHashLink 
-    to="/#profile"
-    activeClassName="nav-link-selected"
-    className="nav-link"
-    id="link-profile"
-    smooth
-    >
-      Profil
-    </NavHashLink> */}
-
     <NavHashLink 
       to="/#hobbies"
       activeClassName="nav-link-selected"

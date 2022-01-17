@@ -6,8 +6,8 @@ import CloseIcon from '../../assets/icons/menu/close.png';
 import HomeIcon from '../../assets/icons/menu/home.png';
 import CodeIcon from '../../assets/icons/menu/code.png';
 import DescriptionIcon from '../../assets/icons/menu/book.png';
-import AssignmentIndIcon from '../../assets/icons/menu/clock.png';
-import VideogameAssetIcon from '../../assets/icons/menu/joystick.png';
+import AssignmentIndIcon from '../../assets/icons/menu/case.png';
+import VideogameAssetIcon from '../../assets/icons/menu/camera.png';
 import MailOutlineIcon from '../../assets/icons/menu/mail.png';
 
 

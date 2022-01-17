@@ -16,7 +16,7 @@ import './style.scss';
 const Contact = () => (
   <section className="top-separation" id="contact">
     <div className="contact">
-      <h1 className="contact-title">
+      <h1 className="part-title">
         <img 
             src={MailOutlineIcon}
             alt="mail"
@@ -24,7 +24,7 @@ const Contact = () => (
         />
         Contact
       </h1>
-      <p className="contact-description">Toutes les informations pour me contacter et en savoir plus sur moi.</p>
+      <p className="part-subtitle">Toutes les informations pour me contacter et en savoir plus sur moi.</p>
 
       <hr />
 

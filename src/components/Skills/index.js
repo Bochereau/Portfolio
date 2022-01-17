@@ -14,7 +14,7 @@ import './style.scss';
 const Skills = () => (
   <section className="separation" id="skills">
     <div className="skills">
-      <h1 className="skills-title">
+      <h1 className="part-title">
         <img 
             src={CodeIcon}
             alt="snippet"
@@ -22,7 +22,7 @@ const Skills = () => (
         /> 
         Compétences
       </h1>
-      <p className="skills-description">Retrouvez ici l'ensemble des compétences que j'ai pu acquérir tout au long de mon parcours professionnel.</p>
+      <p className="part-subtitle">Retrouvez ici l'ensemble des compétences que j'ai pu acquérir tout au long de mon parcours professionnel.</p>
       <hr />
       <Tech />
       <hr />

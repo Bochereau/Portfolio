@@ -23,35 +23,35 @@ const Language = () => {
         </button>
       </div>
       {open === true &&
-        <div className="skills-article-language">
+        <div className="language">
 
-          <div className="skills-percent">
+          <div className="language-percent">
 
-            <div className="skills-percent-french">
+            <div className="language-percent-french">
               <svg>
                 <circle cx="70" cy="70" r="60"></circle>
                 <circle cx="70" cy="70" r="60"></circle>
               </svg>
-              <div className="skills-percent-content">
+              <div className="language-percent-content">
                 <h4>Français</h4>
                 <p>100 %</p>
               </div>
             </div>
-            <p className="skills-article-description">J'ai une parfaite maîtrise du français qui est ma langue maternelle.</p>
+            <p className="language-description">J'ai une parfaite maîtrise du français qui est ma langue maternelle.</p>
           </div>
 
-          <div className="skills-percent">
-            <div className="skills-percent-english">
+          <div className="language-percent">
+            <div className="language-percent-english">
               <svg>
                 <circle cx="70" cy="70" r="60"></circle>
                 <circle cx="70" cy="70" r="60"></circle>
               </svg>
-              <div className="skills-percent-content">
+              <div className="language-percent-content">
                 <h4>Anglais</h4>
                 <p>70 %</p>
               </div>
             </div>
-            <p className="skills-article-description"> Je lis et comprends très bien l'anglais, mais je ne le parle pas couramment.</p>
+            <p className="language-description"> Je lis et comprends très bien l'anglais, mais je ne le parle pas couramment.</p>
 
           </div>
         </div>

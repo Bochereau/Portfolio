@@ -2,7 +2,7 @@ import React from 'react';
 // import Roll from 'react-reveal/Roll';
 
 // icons
-import VideogameAssetIcon from '../../assets/icons/menu/joystick.png';
+import VideogameAssetIcon from '../../assets/icons/menu/camera.png';
 
 // hoobies icons
 import Swimming from '../../assets/icons/hobbies/swimming.png';
@@ -17,7 +17,7 @@ const Hobbies = () => (
   <section className="separation" id="hobbies">
     <div className="hobbies">
 
-      <h1 className="hobbies-title">
+      <h1 className="part-title">
         <img 
             src={VideogameAssetIcon}
             alt="joystick"
@@ -25,7 +25,7 @@ const Hobbies = () => (
         />
         Loisirs
       </h1>
-      <p className="hobbies-description">Mes principaux centres d'intérets.</p>
+      <p className="part-subtitle">Mes principaux centres d'intérets.</p>
 
       <hr />
 

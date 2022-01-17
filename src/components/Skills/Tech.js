@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 // assets imports
 import collapseArrow from '../../assets/icons/collapseArrow.png';
-import expandArrow from '../../assets/icons/expandArrow.png';
+import boxandArrow from '../../assets/icons/expandArrow.png';
 import bolt from '../../assets/icons/bolt.png';
 
 import './style.scss';
@@ -20,103 +20,103 @@ const Tech = () => {
               className="skills-article-open-button"
               onClick={() => setOpen(!open)}
             >
-              {open === false ? <img src={expandArrow} alt="fleche vers le bas"/> : <img src={collapseArrow} alt="fleche vers le haut"/>}
+              {open === false ? <img src={boxandArrow} alt="fleche vers le bas"/> : <img src={collapseArrow} alt="fleche vers le haut"/>}
             </button>
           </div>
           {open &&
             <div className="dev">
 
-              <p className="dev-title">
+              <p className="skills-article-subtitle">
                 Passionné de nouvelles technologies depuis mon enfance, en particulier de jeux vidéo, j'ai commencé à m'intéresser à la <em className="em">conception</em> et au <em className="em">développement</em> d'abord via le medium jeux vidéo. <br />
                 Puis je me suis tourné vers le <em className="em"></em>Web, son histoire et ses architectures. Je me suis alors engagé dans une <em className="em">reconversion professionnelle</em> en 2019 via une formation en téléprésentiel avec l'<em className="em">école O'clock</em> pour apprendre à crée des applications.  <br />
                 Depuis la fin de cette formation j'ai cherché à <em className="em">monter en compétences</em>, de manière autodidacte, en réalisant des <em className="em">projets personnels</em>.
               </p>
 
-              <div className="dev-content">
-                <div className="dev-school">
-                  <h4 className="dev-school-title">Formation</h4>
-                  <div className="dev-school-info">
-                    <p className="dev-school-info-title">Ecole O'clock</p>
-                    <time className="dev-school-info-time">6 mois - 798 heures</time>
+              <div className="dev-box">
+                <div className="skills-box">
+                  <h4 className="skills-box-title">Formation</h4>
+                  <div className="dev-box-info">
+                    <p className="dev-box-info-title">Ecole O'clock</p>
+                    <time className="dev-box-info-time">6 mois - 798 heures</time>
                   </div>
-                  <ul className="dev-school-description">
-                    <li className="dev-school-content">
-                      <h4 className="dev-school-content-title">
+                  <ul className="dev-box-description">
+                    <li className="dev-box-content">
+                      <h4 className="dev-box-content-title">
                         Le Socle - 476 heures de cours.
                       </h4>
-                      <div className="dev-school-tech">
+                      <div className="dev-box-tech">
                         <img src={bolt} alt="éclair"/>
                         <ul>
-                          <li className="dev-school-tech-item"> HTML / CSS / PHP / Javascript</li>
-                          <li className="dev-school-tech-item"> MySQL / API / JSON / AJAX</li>
-                          <li className="dev-school-tech-item"> POO / MVC / Design Pattern</li>
-                          <li className="dev-school-tech-item"> ORM / Eloquent / ACL / CSRF</li>
+                          <li className="dev-box-tech-item"> HTML / CSS / PHP / Javascript</li>
+                          <li className="dev-box-tech-item"> MySQL / API / JSON / AJAX</li>
+                          <li className="dev-box-tech-item"> POO / MVC / Design Pattern</li>
+                          <li className="dev-box-tech-item"> ORM / Eloquent / ACL / CSRF</li>
                         </ul>
                       </div>
                     </li>
 
-                    <li className="dev-school-content">
-                      <h4 className="dev-school-content-title">La Spécialisation - React - 168 heures.</h4>
-                      <div className="dev-school-tech">
+                    <li className="dev-box-content">
+                      <h4 className="dev-box-content-title">La Spécialisation - React - 168 heures.</h4>
+                      <div className="dev-box-tech">
                         <img src={bolt} alt="éclair"/>
                         <ul>
-                          <li className="dev-school-tech-item"> React / Redux / Hooks / Axios</li>
-                          <li className="dev-school-tech-item"> Socket / SASS / Chai / Enzyme</li>
+                          <li className="dev-box-tech-item"> React / Redux / Hooks / Axios</li>
+                          <li className="dev-box-tech-item"> Socket / SASS / Chai / Enzyme</li>
                         </ul>
                       </div>
                     </li>
 
-                    <li className="dev-school-content">
-                      <h4 className="dev-school-content-title">Le Projet - Monilum - 154 heures.</h4>
-                      <div className="dev-school-tech">
+                    <li className="dev-box-content">
+                      <h4 className="dev-box-content-title">Le Projet - Monilum - 154 heures.</h4>
+                      <div className="dev-box-tech">
                         <img src={bolt} alt="éclair"/>
                         <ul>
-                          <li className="dev-school-tech-item"> Git / Github / Bitbucket</li>
-                          <li className="dev-school-tech-item"> Méthode Scrum et Agile</li>
-                          <li className="dev-school-tech-item"> Leaflet / TypeScript / Node / PostgreSQL</li>
+                          <li className="dev-box-tech-item"> Git / Github / Bitbucket</li>
+                          <li className="dev-box-tech-item"> Méthode Scrum et Agile</li>
+                          <li className="dev-box-tech-item"> Leaflet / TypeScript / Node / PostgreSQL</li>
                         </ul>
                       </div>
                     </li>
                   </ul>
                 </div>
 
-                <div className="dev-exp">
-                  <h4 className="dev-exp-title">Et ensuite ?</h4>
+                <div className="skills-box exp">
+                  <h4 className="skills-box-title">Et ensuite ?</h4>
 
-                  <div className="dev-exp-info">
-                    <p className="dev-exp-info-title">Opquast</p>
+                  <div className="dev-box-info">
+                    <p className="dev-box-info-title">Opquast</p>
                   </div>
-                  <ul className="dev-exp-description">
-                    <li className="dev-exp-content">
-                      <h4 className="dev-exp-content-title">
+                  <ul className="dev-box-description">
+                    <li className="dev-box-box">
+                      <h4 className="dev-box-content-title">
                         Démarche Qualité Web
                       </h4>
-                      <div className="dev-exp-tech">
+                      <div className="dev-box-tech">
                         <img src={bolt} alt="éclair"/>
                         <ul>
-                          <li className="dev-exp-tech-item">Bonne pratique / Accessibilité</li>
-                          <li className="dev-exp-tech-item">VPTCS / UI - UX</li>
-                          <li className="dev-exp-tech-item">Qualité web / écoconception</li>
+                          <li className="dev-box-tech-item">Bonne pratique / Accessibilité</li>
+                          <li className="dev-box-tech-item">VPTCS / UI - UX</li>
+                          <li className="dev-box-tech-item">Qualité web / écoconception</li>
                         </ul>
                       </div>
                     </li>
                   </ul>
 
-                  <div className="dev-exp-info">
-                    <p className="dev-exp-info-title">Projets Personnels</p>
+                  <div className="dev-box-info">
+                    <p className="dev-box-info-title">Projets Personnels</p>
                   </div>
-                  <ul className="dev-exp-description">
-                    <li className="dev-exp-content">
-                      <h4 className="dev-exp-content-title">
+                  <ul className="dev-box-description">
+                    <li className="dev-box-box">
+                      <h4 className="dev-box-content-title">
                         VideoGameCollection
                       </h4>
-                      <div className="dev-exp-tech">
+                      <div className="dev-box-tech">
                         <img src={bolt} alt="éclair"/>
                         <ul>
-                          <li className="dev-exp-tech-item">React / Redux / Sass / </li>
-                          <li className="dev-exp-tech-item">Node.js / MongoDB / Mongoose</li>
-                          <li className="dev-exp-tech-item">CRUD / Login &#10132; Hash + Salt </li>
-                          <li className="dev-exp-tech-item"> </li>
+                          <li className="dev-box-tech-item">React / Redux / Sass / </li>
+                          <li className="dev-box-tech-item">Node.js / MongoDB / Mongoose</li>
+                          <li className="dev-box-tech-item">CRUD / Login &#10132; Hash + Salt </li>
+                          <li className="dev-box-tech-item"> </li>
                         </ul>
                       </div>
                     </li>

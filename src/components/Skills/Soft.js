@@ -13,7 +13,7 @@ const Soft = () => {
     <article className="skills-article">
           <div className="skills-article-open">
             <h2 className="skills-article-title">
-              Compétences personnelles
+              Compétences Personnelles
             </h2>
             <button 
               className="skills-article-open-button"
@@ -24,16 +24,14 @@ const Soft = () => {
           </div>
           {open === true &&
           
-            <>
-              <div>
-                <h3 className="skills-article-subtitle">
-                  Ayant un parcours atypique (anciennement dans le domaine sportif), 
-                  j'ai développé un certain nombre de compétences au cours de mes diverses expériences professionnelles passées.
-                </h3>
-              </div>
-              <div className="skills-soft">
-                <div className="skills-soft-attitude">
-                  <h4 className="skills-soft-title">Méthodes de travail</h4>
+            <div className='soft'>
+              <h3 className="skills-article-subtitle">
+                Ayant un parcours atypique (anciennement dans le domaine sportif), 
+                j'ai développé un certain nombre de compétences au cours de mes diverses expériences professionnelles passées.
+              </h3>
+              <div className="soft-box">
+                <div className="skills-box">
+                  <h4 className="skills-box-title">Méthodes de travail</h4>
                   <ul>
                     <li>J'aime coopérer afin de connaître et résoudre les problèmes rencontrés</li>
                     <li>Je sais parfaitement travailler en équipe et/ou en autonomie</li>
@@ -42,8 +40,8 @@ const Soft = () => {
                   </ul>
                 </div>
               
-                <div className="skills-soft-method">
-                  <h4 className="skills-soft-title">Capacité d'appréciation</h4>
+                <div className="skills-box">
+                  <h4 className="skills-box-title">Capacité d'appréciation</h4>
                   <ul>
                     <li>J'aime prendre du recul pour anticiper les problèmes à venir</li>
                     <li>J'ai une bonne capacité d'analyse</li>
@@ -53,7 +51,7 @@ const Soft = () => {
                   </ul>
                 </div>
               </div>
-            </>
+            </div>
           }
             
         </article>

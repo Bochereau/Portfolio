@@ -12,7 +12,7 @@ const Portfolio = () => (
   <section className="separation" id="portfolio">
     <div className="portfolio">
 
-      <h1 className="portfolio-title">
+      <h1 className="part-title">
         <img 
             src={DescriptionIcon}
             alt="menu"
@@ -20,7 +20,7 @@ const Portfolio = () => (
         />
         Portfolio
       </h1>
-      <p className="portfolio-description">Les différents projets sur lesquels j'ai travaillé.</p>
+      <p className="part-subtitle">Les différents projets sur lesquels j'ai travaillé.</p>
 
 
       <div className="portfolio-list">
@@ -36,7 +36,7 @@ const Portfolio = () => (
 
           <article className="portfolio-card-article">
             <p className="portfolio-card-article-description">
-              Monilum est un site qui permet la gestion de luminaires connectés. <br/>
+              Monilum est un site qui permet la gestion de luminaires connectés.
               Réalisé en équipe de 4 développeurs en méthode Scrum/Agile.
             </p>
             <p className="portfolio-card-article-tech">#React #Redux #Node #Express #PostgreSQL #Leaflet</p>
