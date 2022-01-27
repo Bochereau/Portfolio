@@ -12,7 +12,7 @@
   //border-top: 5px solid vars.$primary-color;
   box-shadow: 0 0 5px black;
   margin-top: vars.$gutter*4;
-  padding: vars.$gutter;
+  padding: vars.$gutter*0.5;
   @media (max-width: 426px) {
     padding: vars.$gutter*0.5;
   }

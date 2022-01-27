@@ -113,10 +113,22 @@ const Tech = () => {
                       <div className="dev-box-tech">
                         <img src={bolt} alt="éclair"/>
                         <ul>
-                          <li className="dev-box-tech-item">React / Redux / Sass / </li>
-                          <li className="dev-box-tech-item">Node.js / MongoDB / Mongoose</li>
+                          <li className="dev-box-tech-item">Front : React / Redux / Sass</li>
+                          <li className="dev-box-tech-item">Back : Node.js / MongoDB / Mongoose</li>
                           <li className="dev-box-tech-item">CRUD / Login &#10132; Hash + Salt </li>
-                          <li className="dev-box-tech-item"> </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li className="dev-box-box">
+                      <h4 className="dev-box-content-title">
+                        Limit Break
+                      </h4>
+                      <div className="dev-box-tech">
+                        <img src={bolt} alt="éclair"/>
+                        <ul>
+                          <li className="dev-box-tech-item">Front : React / Redux / React-router </li>
+                          <li className="dev-box-tech-item">Back : Strapi / PostgreSQL</li>
+                          <li className="dev-box-tech-item">Cloudinary (stockage d'images) </li>
                         </ul>
                       </div>
                     </li>

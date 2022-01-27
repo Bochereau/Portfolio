@@ -75,7 +75,7 @@ const Home = () => (
                   alt="télechargement"
                   className="home-cv-button-icon"
                 />
-                <p>PDF : 901 Ko</p>
+                <p>PDF : 468 Ko</p>
               </div>
             </a>
 
