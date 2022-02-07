@@ -41,13 +41,13 @@ const Soft = () => {
                 </div>
               
                 <div className="skills-box">
-                  <h4 className="skills-box-title">Capacité d'appréciation</h4>
+                  <h4 className="skills-box-title">Traits de caractère</h4>
                   <ul>
-                    <li>J'aime prendre du recul pour anticiper les problèmes à venir</li>
-                    <li>J'ai une bonne capacité d'analyse</li>
-                    <li>Je suis organisé</li>
-                    <li>Je suis calme</li>
-                    <li>Je sais faire preuve d'humilité</li>
+                    <li>Calme</li>
+                    <li>Humble</li>
+                    <li>Sans préjugés</li>
+                    <li>A l'écoute</li>
+                    <li>Analytique</li>
                   </ul>
                 </div>
               </div>

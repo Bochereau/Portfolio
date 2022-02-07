@@ -48,7 +48,7 @@ const Language = () => {
               </svg>
               <div className="language-percent-content">
                 <h4>Anglais</h4>
-                <p>70 %</p>
+                <p>80 %</p>
               </div>
             </div>
             <p className="language-description"> Je lis et comprends très bien l'anglais, mais je ne le parle pas couramment.</p>
