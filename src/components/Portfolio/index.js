@@ -68,7 +68,7 @@ const Portfolio = () => (
                     <span>Code Back</span>
                 </p>
             </div>
-            <a className="portfolio-card-links-open" target="_blank" rel="noreferrer" href="https://monilum.com">
+            <a className="portfolio-card-links-open" target="_blank" rel="noreferrer" href="https://monilum.fr">
                 Visiter le site
                 <svg 
                   xmlns="http://www.w3.org/2000/svg" 
