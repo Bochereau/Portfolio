@@ -18,7 +18,7 @@ const Home = () => (
       <article className="home-text">
         <h2 className="home-subtitle home-subtitle--top">Bienvenue, je suis</h2>
         <h1 className="home-title">Antoine Bochereau,</h1>
-        <h2 className="home-subtitle home-subtitle--bottom">un développeur fullstack JS.</h2>
+        <h2 className="home-subtitle home-subtitle--bottom">développeur fullstack JS.</h2>
         <div className="home-links">
           <div className="home-link">
             <a 

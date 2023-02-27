@@ -26,32 +26,19 @@ const Language = () => {
         <div className="language">
 
           <div className="language-percent">
-
-            <div className="language-percent-french">
-              <svg>
-                <circle cx="70" cy="70" r="60"></circle>
-                <circle cx="70" cy="70" r="60"></circle>
-              </svg>
-              <div className="language-percent-content">
-                <h4>Français</h4>
-                <p>100 %</p>
-              </div>
+            <div className="language-percent-content green">
+              <h4>Français</h4>
+              <p>100 %</p>
             </div>
-            <p className="language-description">J'ai une parfaite maîtrise du français qui est ma langue maternelle.</p>
+            <p className="language-description">Parfaite maîtrise du français qui est ma langue maternelle.</p>
           </div>
 
           <div className="language-percent">
-            <div className="language-percent-english">
-              <svg>
-                <circle cx="70" cy="70" r="60"></circle>
-                <circle cx="70" cy="70" r="60"></circle>
-              </svg>
-              <div className="language-percent-content">
-                <h4>Anglais</h4>
-                <p>80 %</p>
-              </div>
+            <div className="language-percent-content warning">
+              <h4>Anglais</h4>
+              <p>80 %</p>
             </div>
-            <p className="language-description"> Je lis et comprends très bien l'anglais, mais je ne le parle pas couramment.</p>
+            <p className="language-description">Excellente compréhension de l'anglais, mais je ne le parle pas couramment.</p>
 
           </div>
         </div>

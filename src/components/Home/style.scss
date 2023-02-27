@@ -27,7 +27,7 @@
     max-width: 400px;
     border-radius: 50%;
     margin: vars.$gutter*4;
-    border: 5px solid black;
+    // border: 5px solid black;
     @media (max-width: 1300px) {
       max-width: 300px;
       margin: vars.$gutter*2;

@@ -168,14 +168,14 @@ Language part
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: vars.$gutter;
   @media (max-width: 769px) {
     flex-direction: column;
   }
   &-description{
     font-size: vars.$gutter*1.1;
     line-height: 1.5;
-    margin-left: - (vars.$gutter*4);
+    flex:1;
+    padding: vars.$gutter;
     @media(max-width: 426px) {
       font-size: vars.$gutter;
       margin-bottom: vars.$gutter;
@@ -186,43 +186,39 @@ Language part
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40%;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 5px;
+    width: 50%;
     @media (max-width: 769px) {
       margin-top: vars.$gutter;
       width: 100%;
     }
     @media (max-width: 426px) {
       flex-direction: column;
-      margin-left: vars.$gutter*4;
-    }
-    & svg{
-      width: 140px;
-      height: 140px;
-      & circle{
-        stroke-width: 15px;
-        fill: vars.$background-color;
-      }
-    }
-    &-french{
-      display: flex;
-      align-items: center;
-      & circle{
-        stroke: rgb(23, 238, 23);
-      }
-    }
-    &-english{
-      display: flex;
-      align-items: center;
-      & circle{
-        stroke: rgb(231, 191, 13);
-      }
     }
     &-content{
-      position: relative;
-      left: -107px;
       font-weight: bold;
       font-size: vars.$gutter*1.2;
       line-height: 1.2;
+      border-width: 15px;
+      border-style: solid;
+      border-radius: 50%;
+      width:150px;
+      height:150px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
     }
   }
+}
+
+.green{
+  border-color:#29bf12;
+}
+
+.warning{
+  border-color: orange;
 }
