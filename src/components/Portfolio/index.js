@@ -5,6 +5,7 @@ import monilum from '../../assets/images/portfolio/monilum.png';
 import VGC from '../../assets/images/portfolio/VGC.png';
 import limitbreak from '../../assets/images/portfolio/blog.png'
 import cargo from '../../assets/images/portfolio/cargo.png'
+import cargopocket from '../../assets/images/portfolio/cargopocket.png'
 
 // material ui icons
 import DescriptionIcon from '../../assets/icons/menu/book.png';
@@ -12,11 +13,23 @@ import PortfolioCard from './PortfolioCard';
 
 const projects = [
   {
-    title: 'Monilum',
-    image: monilum,
-    alt: 'Site Web Monilum',
-    description: `Monilum est un site qui permet la gestion de luminaires connectés.\nRéalisé en équipe de 4 développeurs en méthode Scrum/Agile.\nLe site est desormais fermé. Erreur 404...`,
-    tech: ['React', 'Redux', 'Node', 'Express', 'PostgreSQL', 'Leaflet'],
+    title: 'Cargo-TMS',
+    image: cargo,
+    alt: 'Site Web Fret Solutions',
+    description: `Cargo-TMS est un logiciel transport full web.\nIl permet une gestion complète des activités de transport routier de marchandises.\nSes fonctionnalités s'étendent de la saisie des commandes jusqu'à la facturation.`,
+    tech: ['jQuery', 'HERE Maps', 'rubyOnRails', 'PostgreSQL'],
+    links: {
+      front: null,
+      back: null,
+      site: 'http://www.fretsolutions.fr/',
+    },
+  },
+  {
+    title: 'Cargo Pocket',
+    image: cargopocket,
+    alt: 'Application Android/iOS pour Cargo-TMS',
+    description: `Cargo Pocket est un application mobile dédiée aux utilisateurs du logiciel Cargo-TMS.\nOn y retrouve les fonctionnalités essentielles de Cargo-TMS.\nDisponible sur Android et iOS.`,
+    tech: ['React Native', 'Maps'],
     links: {
       front: null,
       back: null,
@@ -27,7 +40,7 @@ const projects = [
     title: 'Limit Break',
     image: limitbreak,
     alt: 'Site Web Limit Break',
-    description: `Limit Break est un blog dédié aux jeux vidéo.\nOn y retrouve divers articles traitant de jeux actuels et passés.\nDes commentaires peuvent être ajoutés aux articles.`,
+    description: `Limit Break est un projet personnel que j'ai réalisé pour moi-même.\nIl prend la forme d'un blog dédié aux jeux vidéo. On y retrouve divers articles traitant de jeux actuels et passés.`,
     tech: ['Vite', 'Vercel', 'API-serverless', 'MongoDB', 'Cloudinary'],
     links: {
       front: 'https://github.com/Bochereau/blog-front',
@@ -39,7 +52,7 @@ const projects = [
     title: 'VideoGame Collection',
     image: VGC,
     alt: 'Site Web VideoGameCollection',
-    description: `VideoGameCollection est un outil de gestion de collection de jeux video.\nAjouter, supprimer, modifier des listes de jeux et consoles.`,
+    description: `VideoGameCollection est un outil de gestion de collection de jeux video.\nAjouter, supprimer, modifier des listes de jeux et consoles. Il s'agit d'un projet personnel.`,
     tech: ['React', 'Redux', 'Node', 'Mongoose', 'MongoDB'],
     links: {
       front: 'https://github.com/Bochereau/VideoGameCollection',
@@ -48,15 +61,15 @@ const projects = [
     },
   },
   {
-    title: 'Cargo-TMS',
-    image: cargo,
-    alt: 'Site Web Fret Solutions',
-    description: `Cargo-TMS est un logiciel transport full web.\nIl permet une gestion complète des activités de transport routier de marchandises.\nSes fonctionnalités s'étendent de la saisie des commandes jusqu'à la facturation.`,
-    tech: ['jQuery', 'HERE Maps', 'rubyOnRails', 'PostgreSQL'],
+    title: 'Monilum',
+    image: monilum,
+    alt: 'Site Web Monilum',
+    description: `Monilum est mon projet de fin d'étude. Il s'agit d'un site qui permet la gestion de luminaires connectés.\nRéalisé en équipe de 4 développeurs en méthode Scrum/Agile.\nLe site est desormais fermé. Erreur 404...`,
+    tech: ['React', 'Redux', 'Node', 'Express', 'PostgreSQL', 'Leaflet'],
     links: {
       front: null,
       back: null,
-      site: 'http://www.fretsolutions.fr/',
+      site: null,
     },
   },
 ];

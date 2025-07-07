@@ -75,8 +75,8 @@
   font-size: vars.$gutter*1.1;
   font-weight: bold;
   border: 3px solid vars.$link-alt;
-  border-radius: 15px;
-  padding: vars.$gutter*0.6;
+  border-radius: 8px;
+  padding: vars.$gutter*0.6 vars.$gutter*1.5;
   color: vars.$background-color;
   background-color: vars.$link-alt;
   transition: transform 150ms ease-in-out;

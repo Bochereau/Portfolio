@@ -6,12 +6,12 @@ const PortfolioCard = ({ title, image, alt, description, tech, links }) => (
     <img className="portfolio-card-image" src={image} alt={alt} />
     <article className="portfolio-card-article">
       <p className="portfolio-card-article-description">{description}</p>
-      <div className="portfolio-card-article-tech">
-        {tech.map((t, idx) => (
-          <span className="portfolio-card-article-tech-badge" key={idx}># {t}</span>
-        ))}
-      </div>
     </article>
+    <div className="portfolio-card-tech">
+        {tech.map((t, idx) => (
+            <span className="portfolio-card-tech-badge" key={idx}># {t}</span>
+        ))}
+    </div>
     <div className="portfolio-card-links">
       <div className="portfolio-card-links-code">
         {links.front ? (

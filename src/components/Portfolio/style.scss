@@ -72,23 +72,29 @@
     &-article{
       text-align: center;
       line-height: 1.2;
+      flex: 1;
       &-description{
         font-size: vars.$gutter*1.1;
         padding: vars.$gutter*0.8;
         white-space: pre-line;
       }
-      &-tech{
-        font-size: vars.$gutter;
-        color: vars.$link-color;
-        &-badge {
-          display: inline-block;
-          background: #333;
-          color: #fff;
-          border-radius: 8px;
-          padding: 0.2em 0.8em;
-          margin: vars.$gutter*0.2;
-          letter-spacing: 0.5px;
-        }
+    }
+
+    &-tech{
+      font-size: vars.$gutter;
+      color: vars.$link-color;
+      margin-top: auto;
+      text-align: center;
+      line-height: 1.2;
+      margin: vars.$gutter auto;
+      &-badge {
+        display: inline-block;
+        background: #333;
+        color: #fff;
+        border-radius: 8px;
+        padding: 0.2em 0.8em;
+        margin: vars.$gutter*0.2;
+        letter-spacing: 0.5px;
       }
     }
 
@@ -109,7 +115,6 @@
         font-size: vars.$gutter*1.1;
         font-weight: bold;
         padding: vars.$gutter*0.8 0;
-        background-color: vars.$background-color;
         color: vars.$primary-color;
         &:hover{
           color: vars.$background-color;
