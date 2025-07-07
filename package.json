@@ -42,5 +42,8 @@
   "devDependencies": {
     "@babel/core": "^7.16.7",
     "babel-loader": "^8.2.3"
+  },
+  "engines": {
+    "node": "18.x"
   }
 }
