@@ -3,11 +3,63 @@ import React from 'react';
 import './style.scss';
 import monilum from '../../assets/images/portfolio/monilum.png';
 import VGC from '../../assets/images/portfolio/VGC.png';
-import limitbreak from '../../assets/images/portfolio/limitbreak.png'
+import limitbreak from '../../assets/images/portfolio/blog.png'
+import cargo from '../../assets/images/portfolio/cargo.png'
 
 // material ui icons
 import DescriptionIcon from '../../assets/icons/menu/book.png';
+import PortfolioCard from './PortfolioCard';
 
+const projects = [
+  {
+    title: 'Monilum',
+    image: monilum,
+    alt: 'Site Web Monilum',
+    description: `Monilum est un site qui permet la gestion de luminaires connectés.\nRéalisé en équipe de 4 développeurs en méthode Scrum/Agile.\nLe site est desormais fermé. Erreur 404...`,
+    tech: ['React', 'Redux', 'Node', 'Express', 'PostgreSQL', 'Leaflet'],
+    links: {
+      front: null,
+      back: null,
+      site: null,
+    },
+  },
+  {
+    title: 'Limit Break',
+    image: limitbreak,
+    alt: 'Site Web Limit Break',
+    description: `Limit Break est un blog dédié aux jeux vidéo.\nOn y retrouve divers articles traitant de jeux actuels et passés.\nDes commentaires peuvent être ajoutés aux articles.`,
+    tech: ['Vite', 'Vercel', 'API-serverless', 'MongoDB', 'Cloudinary'],
+    links: {
+      front: 'https://github.com/Bochereau/blog-front',
+      back: null,
+      site: 'https://limitbreak.vercel.app/',
+    },
+  },
+  {
+    title: 'VideoGame Collection',
+    image: VGC,
+    alt: 'Site Web VideoGameCollection',
+    description: `VideoGameCollection est un outil de gestion de collection de jeux video.\nAjouter, supprimer, modifier des listes de jeux et consoles.`,
+    tech: ['React', 'Redux', 'Node', 'Mongoose', 'MongoDB'],
+    links: {
+      front: 'https://github.com/Bochereau/VideoGameCollection',
+      back: 'https://github.com/Bochereau/VideoGameAPI',
+      site: null,
+    },
+  },
+  {
+    title: 'Cargo-TMS',
+    image: cargo,
+    alt: 'Site Web Fret Solutions',
+    description: `Cargo-TMS est un logiciel transport full web.\nIl permet une gestion complète des activités de transport routier de marchandises.\nSes fonctionnalités s'étendent de la saisie des commandes jusqu'à la facturation.`,
+    tech: ['jQuery', 'HERE Maps', 'rubyOnRails', 'PostgreSQL'],
+    links: {
+      front: null,
+      back: null,
+      site: 'http://www.fretsolutions.fr/',
+    },
+  },
+];
 
 const Portfolio = () => (
   <section className="separation" id="portfolio">
@@ -25,203 +77,10 @@ const Portfolio = () => (
 
 
       <div className="portfolio-list">
-
-        <div className="portfolio-card">
-
-          <h3 className="portfolio-card-title">Monilum</h3>
-          <img
-            className="portfolio-card-image" 
-            src={monilum} 
-            alt="Site Web Monilum"
-          />
-
-          <article className="portfolio-card-article">
-            <p className="portfolio-card-article-description">
-              Monilum est un site qui permet la gestion de luminaires connectés.
-              Réalisé en équipe de 4 développeurs en méthode Scrum/Agile.
-            </p>
-            <p className="portfolio-card-article-tech">#React #Redux #Node #Express #PostgreSQL #Leaflet</p>
-          </article>
-          
-          <div className="portfolio-card-links">
-            <div className="portfolio-card-links-code">
-                <p className="portfolio-card-links-button off border">
-                  <svg 
-                    xmlns="http://www.w3.org/2000/svg" 
-                    width="24" 
-                    height="24" 
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                  </svg>
-                    <span>Code Front</span>
-                </p>
-                <p className="portfolio-card-links-button off">
-                <svg 
-                  xmlns="http://www.w3.org/2000/svg" 
-                  width="24" 
-                  height="24" 
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                </svg>
-                    <span>Code Back</span>
-                </p>
-            </div>
-            <a className="portfolio-card-links-open" target="_blank" rel="noreferrer" href="https://monilum.fr">
-                Visiter le site
-                <svg 
-                  xmlns="http://www.w3.org/2000/svg" 
-                  width="24" 
-                  height="24" 
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M6 17c2.269-9.881 11-11.667 11-11.667v-3.333l7 6.637-7 6.696v-3.333s-6.17-.171-11 5zm12 .145v2.855h-16v-12h6.598c.768-.787 1.561-1.449 2.339-2h-10.937v16h20v-6.769l-2 1.914z"/>
-                </svg>
-            </a>
-          </div>
-        </div>
-
-        <div className="portfolio-card">
-            
-            <h3 className="portfolio-card-title">VideoGame Collection</h3>
-            
-            <img 
-              className="portfolio-card-image" 
-              src={VGC}
-              alt="Site Web VideoGameCollection"
-            />
-
-            <article className="portfolio-card-article">
-              <p className="portfolio-card-article-description">
-                VideoGameCollection est un outil de gestion de collection de jeux video. <br/>
-                Ajouter, supprimer, modifier des listes de jeux et consoles.
-              </p>
-              <p className="portfolio-card-article-tech">#React #Redux #Node #Mongoose #MongoDB</p>
-            </article>
-            
-            <div className="portfolio-card-links">
-              <div className="portfolio-card-links-code">
-                <a
-                  href="https://github.com/Bochereau/VideoGameCollection" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="portfolio-card-links-button border"
-                >
-                    <svg 
-                      xmlns="http://www.w3.org/2000/svg" 
-                      width="24" 
-                      height="24" 
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                    </svg>
-                  <span>Code Front</span>
-                </a>
-
-                <a
-                  href="https://github.com/Bochereau/VideoGameAPI" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="portfolio-card-links-button"
-                >
-                    <svg 
-                      xmlns="http://www.w3.org/2000/svg" 
-                      width="24" 
-                      height="24" 
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                    </svg>
-                  <span>Code Back</span>
-                </a>
-              </div>
-              <p className="portfolio-card-links-open off">
-                Visiter le site
-                <svg 
-                  xmlns="http://www.w3.org/2000/svg" 
-                  width="24" 
-                  height="24" 
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M6 17c2.269-9.881 11-11.667 11-11.667v-3.333l7 6.637-7 6.696v-3.333s-6.17-.171-11 5zm12 .145v2.855h-16v-12h6.598c.768-.787 1.561-1.449 2.339-2h-10.937v16h20v-6.769l-2 1.914z"/>
-                </svg>
-              </p>
-
-          </div>
-        </div>
-      
-
-        <div className="portfolio-card">
-              
-              <h3 className="portfolio-card-title">Limit Break</h3>
-              
-              <img 
-                className="portfolio-card-image" 
-                src={limitbreak}
-                alt="Site Web VideoGameCollection"
-              />
-
-              <article className="portfolio-card-article">
-                <p className="portfolio-card-article-description">
-                  Limit Break est un blog dédié aux jeux vidéo. <br/>
-                  On y retrouve divers articles traitant de jeux actuels et passés.
-                  Des commentaires peuvent être ajoutés aux articles.
-                </p>
-                <p className="portfolio-card-article-tech">#React #Redux #Strapi #Cloudinary</p>
-              </article>
-              
-              <div className="portfolio-card-links">
-                <div className="portfolio-card-links-code">
-                  <a
-                    href="https://github.com/Bochereau/blog-front" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="portfolio-card-links-button border"
-                  >
-                      <svg 
-                        xmlns="http://www.w3.org/2000/svg" 
-                        width="24" 
-                        height="24" 
-                        viewBox="0 0 24 24"
-                      >
-                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                      </svg>
-                    <span>Code Front</span>
-                  </a>
-
-                  <a
-                    href="https://github.com/Bochereau/blog-api" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="portfolio-card-links-button"
-                  >
-                      <svg 
-                        xmlns="http://www.w3.org/2000/svg" 
-                        width="24" 
-                        height="24" 
-                        viewBox="0 0 24 24"
-                      >
-                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                      </svg>
-                    <span>Code Back</span>
-                  </a>
-                </div>
-                <a className="portfolio-card-links-open" target="_blank" rel="noreferrer" href="https://limitbreak.vercel.app/">
-                  Visiter le site
-                  <svg 
-                    xmlns="http://www.w3.org/2000/svg" 
-                    width="24" 
-                    height="24" 
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M6 17c2.269-9.881 11-11.667 11-11.667v-3.333l7 6.637-7 6.696v-3.333s-6.17-.171-11 5zm12 .145v2.855h-16v-12h6.598c.768-.787 1.561-1.449 2.339-2h-10.937v16h20v-6.769l-2 1.914z"/>
-                  </svg>
-              </a>
-
-            </div>
-          </div>
-        </div>
+        {projects.map((project, idx) => (
+          <PortfolioCard key={idx} {...project} />
+        ))}
+      </div>
 
       <div className="portfolio-link">
         <a 
