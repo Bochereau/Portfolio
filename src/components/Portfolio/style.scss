@@ -241,9 +241,11 @@
     gap: vars.$gutter;
     padding: vars.$gutter;
     flex: 1;
+    @media (max-width: 1024px) {
+      gap: vars.$gutter*2;
+    }
     @media (min-width: 600px) and (max-width: 1024px) {
       flex-direction: row;
-      gap: vars.$gutter*2;
       flex: 1;
     }
 
@@ -257,7 +259,8 @@
         align-items: flex-start;
       }
       @media (max-width: 600px) {
-        flex: 1;
+        flex: unset;
+        align-items: stretch;
       }
     }
 
@@ -440,7 +443,7 @@
       display: none;
       @media (max-width: 1024px) {
         display: flex;
-        padding: vars.$gutter;
+        padding: vars.$gutter*1.5 0;
       }
     }
   }
