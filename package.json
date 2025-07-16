@@ -44,6 +44,6 @@
     "babel-loader": "^8.2.3"
   },
   "engines": {
-    "node": "18.x"
+    "node": "22.x"
   }
 }
